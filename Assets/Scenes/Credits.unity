@@ -548,23 +548,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Player 3D Model - https://sketchfab.com/3d-models/low-poly-male-human-0985ce27cfcc4911afcfba71f84df1ad
+  m_text: 'Player 3D Model - https://skfb.ly/6npIX (CC BY 4.0)
+
+
+    Pistol 3D Model
+    - https://skfb.ly/6STMA (CC BY 4.0)
+
+
+    Drone 3D Model - https://skfb.ly/6qZCS
     (CC BY 4.0)
 
 
-    Drone 3D Model - https://sketchfab.com/3d-models/tron-ish-low-poly-drone-cad1fc9ada864e06ab69a37705656392
-    (CC BY 4.0)
+    Gameplay Music - https://bit.ly/3ysm5eE (CC BY 3.0)
 
 
-    Gameplay Music - https://freesound.org/people/frankum/sounds/339498/
-    (CC BY 3.0)
+    Gun
+    Shot Effect - https://bit.ly/3BmPkBM (CC BY 3.0)
 
 
-    Gun Shot Effect - https://freesound.org/people/CJDeets/sounds/476740/
-    (CC BY 3.0)
-
-
-    Game made by Pedro Rey Anca
+    Game made by Pedro Rey
+    Anca
 
 '
   m_isRightToLeft: 0
@@ -593,8 +596,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
