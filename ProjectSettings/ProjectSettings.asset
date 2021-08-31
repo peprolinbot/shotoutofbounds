@@ -16,7 +16,7 @@ PlayerSettings:
   productName: Shot Out Of Bounds
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -42,6 +42,8 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: f193469a662ef65bcb101000e25c7e92, type: 3}
     duration: 2
+  - logo: {fileID: 21300000, guid: 345ad7a3bdf39b994a60d9ac5138abcc, type: 3}
+    duration: 4
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
