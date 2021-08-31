@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
     public AudioSource gotHitAudioSource;
     public AudioSource diedAudioSource;
+    public float timeToKill;
+
+    void Start() {
+      StartCoroutine(GameOverCountdown());
+    }
 
     void OnTriggerEnter(Collider collider) {
       gotHitAudioSource.Play();
@@ -17,6 +23,14 @@ public class Enemy : MonoBehaviour
         StartCoroutine(SelfDestroyAfterSound());
       }
     }
+
+    IEnumerator GameOverCountdown()
+    {
+        yield return new WaitForSeconds(timeToKill);
+        SceneManager.LoadScene("GameOver");
+
+    }
+
 
     IEnumerator SelfDestroyAfterSound()
      {

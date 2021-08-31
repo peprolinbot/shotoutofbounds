@@ -24,7 +24,7 @@ public class SpawnEnemys : MonoBehaviour
     void RandomSpawn()
     {
 
-      switch (Random.Range(0, 3)) {
+      switch (Random.Range(0, 4)) {
           case 0: // xPositiveWall
               xSpawn = xPositiveWall.transform.position.x + distanceFromWall;
               zSpawn = Random.Range(xPositiveWall.transform.position.z - sideOffsetFromCenter, xPositiveWall.transform.position.z + sideOffsetFromCenter);

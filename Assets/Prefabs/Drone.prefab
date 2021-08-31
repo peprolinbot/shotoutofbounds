@@ -724,6 +724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gotHitAudioSource: {fileID: 1818713776094281098}
   diedAudioSource: {fileID: 690434405976004540}
+  timeToKill: 10
 --- !u!65 &7947255962489529021
 BoxCollider:
   m_ObjectHideFlags: 0

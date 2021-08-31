@@ -776,7 +776,7 @@ MonoBehaviour:
   zNegativeWall: {fileID: 343402649}
   distanceFromWall: 10
   ySpawn: 10.5
-  sideOffsetFromCenter: 5
+  sideOffsetFromCenter: 20
   spawnRate: 7
 --- !u!4 &812680721
 Transform:
