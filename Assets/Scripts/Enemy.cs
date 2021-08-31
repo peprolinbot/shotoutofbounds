@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,7 +10,12 @@ public class Enemy : MonoBehaviour
     public AudioSource diedAudioSource;
     public float timeToKill;
 
+    bool alreadyKilled = false;
+    Text scoreText;
+    int score;
+
     void Start() {
+      scoreText = GameObject.Find("Canvas/Text Score").GetComponent<Text>();
       StartCoroutine(GameOverCountdown());
     }
 
@@ -18,7 +24,11 @@ public class Enemy : MonoBehaviour
     }
 
     void OnTriggerStay(Collider collider) {
-      if (Input.GetMouseButton(0)) {
+      if (Input.GetMouseButton(0) && !alreadyKilled) {
+        alreadyKilled = true;
+        int.TryParse(scoreText.text, out score);
+        score+=1;
+        scoreText.text = score.ToString();
         diedAudioSource.Play();
         StartCoroutine(SelfDestroyAfterSound());
       }
@@ -27,6 +37,11 @@ public class Enemy : MonoBehaviour
     IEnumerator GameOverCountdown()
     {
         yield return new WaitForSeconds(timeToKill);
+        int.TryParse(scoreText.text, out score);
+        PlayerPrefs.SetInt("LastScore", score);
+        if (score > PlayerPrefs.GetInt("HighScore")) {
+          PlayerPrefs.SetInt("HighScore", score);
+        }
         SceneManager.LoadScene("GameOver");
 
     }
