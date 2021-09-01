@@ -5,18 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class GoBack : MonoBehaviour
 {
-    void Update()
+  SceneLoader sceneLoader;
+
+  void Start() {
+    sceneLoader = GetComponent<SceneLoader>();
+  }
+
+  void Update()
+  {
+    if (Input.GetKeyDown(KeyCode.Escape))
     {
-      if (Input.GetKeyDown(KeyCode.Escape))
+      if (SceneManager.GetActiveScene().buildIndex == 0)
       {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-          Application.Quit();
-        }
-        else
-        {
-          SceneManager.LoadScene(0);
-        }
+        Application.Quit();
+      }
+      else
+      {
+        sceneLoader.LoadScene("MainMenu");
       }
     }
+  }
 }

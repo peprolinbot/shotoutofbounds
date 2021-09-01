@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
@@ -13,8 +12,10 @@ public class Enemy : MonoBehaviour
     bool alreadyKilled = false;
     Text scoreText;
     int score;
+    SceneLoader sceneLoader;
 
     void Start() {
+      sceneLoader = FindObjectOfType<SceneLoader>();
       scoreText = GameObject.Find("Canvas/Text Score").GetComponent<Text>();
       StartCoroutine(GameOverCountdown());
     }
@@ -42,7 +43,7 @@ public class Enemy : MonoBehaviour
         if (score > PlayerPrefs.GetInt("HighScore")) {
           PlayerPrefs.SetInt("HighScore", score);
         }
-        SceneManager.LoadScene("GameOver");
+        sceneLoader.LoadScene("GameOver");
 
     }
 
