@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     }
 
     void OnTriggerStay(Collider collider) {
-      if (Input.GetMouseButton(0) && !alreadyKilled) {
+      if (Input.GetMouseButton(0) && !alreadyKilled && Movement.bulletsLeft > 0) {
         alreadyKilled = true;
         int.TryParse(scoreText.text, out score);
         score+=1;
