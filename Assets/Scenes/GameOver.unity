@@ -2256,7 +2256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a90d2e27a652154caaf9456491317e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBefore: 'Your Score: '
+  textBefore: 'HIgh Score: '
   textAfter: 
 --- !u!114 &1204234039
 MonoBehaviour:
