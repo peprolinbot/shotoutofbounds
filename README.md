@@ -3,7 +3,7 @@
 
 [![Build project](https://github.com/peprolinbot/shotoutofbounds/actions/workflows/build-all.yml/badge.svg)](https://github.com/peprolinbot/shotoutofbounds/actions/workflows/build-all.yml)
 
-3D Audio guided kind-of FPS
+3D Audio guided kind-of FPS created for the *Tu Juego a Juicio Jam 2021*
 #### This game can only be played with headphones
 
 ## Story
