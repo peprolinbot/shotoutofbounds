@@ -1,5 +1,8 @@
 # Shot Out Of Bounds
 ![Shot Out Of Bounds Logo](https://img.itch.zone/aW1nLzY4ODIyNTAucG5n/original/037JFx.png)
+
+[![Build project](https://github.com/peprolinbot/shotoutofbounds/actions/workflows/build-all.yml/badge.svg)](https://github.com/peprolinbot/shotoutofbounds/actions/workflows/build-all.yml)
+
 3D Audio guided kind-of FPS
 #### This game can only be played with headphones
 
