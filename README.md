@@ -1,4 +1,5 @@
 # Shot Out Of Bounds
+![Shot Out Of Bounds Logo](https://img.itch.zone/aW1nLzY4ODIyNTAucG5n/original/037JFx.png)
 3D Audio guided kind-of FPS
 #### This game can only be played with headphones
 
